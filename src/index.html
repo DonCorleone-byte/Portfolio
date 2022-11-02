@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Meta Tags — Preview, Edit and Generate">
-    <meta name="description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate">
-    <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta name="og:title" content="Мое портфолио">
+    <meta name="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
     <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate">
-    <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta name="twitter:title" content="Мое портфолио">
+    <meta name="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
@@ -38,9 +40,27 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Максим</title>
+    
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+    <aside class="sidepanel">
+        <a href="#" class="sidepanel__link"><img src="icons/social/Facebook.svg" alt="Facebook"></a>
+        <a href="#" class="sidepanel__link"><img src="icons/social/Instagram.svg" alt="Instagram"></a>
+        <a href="#" class="sidepanel__link"><img src="icons/social/Github.svg" alt="Github"></a>
+        <div class="sidepanel__divider"></div>
+        <div class="sidepanel__text"><span>Социальные сети</span></div>
+    </aside>
+    <section class="promo">
+        <div class="container">
+            <div class="title title_fz16 promo__subtitle">Меня зовут Максим Умовист</div>
+            <h1 class="title title_fz48 promo__title">Я web-разработчик<br> из города Петропавловск</h1>
+            <div class="promo__btns">
+                <a href="#" class="promo__link btn">Портфолио</a>
+                <a href="#" class="promo__link">Про меня</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
