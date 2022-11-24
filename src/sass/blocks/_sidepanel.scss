@@ -8,6 +8,12 @@
     justify-content: space-between;
     height: 340px;
     z-index: 3;
+    img {
+        &:hover {
+            transition: all 0.6s;
+            transform: scale(1.20);
+        }
+    }
     &__divider {
         width: 2px;
         height: 70px;
