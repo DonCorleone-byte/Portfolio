@@ -22,6 +22,31 @@
             }
         }
     }
+    .resume {
+        padding-top: 100px;
+        &__wrapper {
+            grid-template-columns: repeat(2,360px);
+            gap: 110px;
+        }
+    }
+    .skills {
+        &__items {
+            padding: 0;
+            grid-template: repeat(2,minmax(250px,auto))/repeat(4,230px);
+            gap: 10px;
+        }
+        &__item {
+            padding: 15px 15px;
+        }
+        &__ratings {
+            margin-top: 70px;
+            column-gap: 25px;
+            grid-template: repeat(2,minmax(70px,auto))/repeat(3,300px);
+            &-line {
+                width: 300px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -38,6 +63,33 @@
             &-item {
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 100px;
+        &__wrapper {
+            grid-template-columns: repeat(2,260px);
+            gap: 80px;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template: minmax(250px, auto) / repeat(2,355px);
+        }
+        &__item {
+            &-img {
+                justify-content: center;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+        &__ratings {
+            grid-template: minmax(70px,auto) / repeat(2,300px);
+            justify-content: center;
+            &-item {
+                row-gap: 30px;
             }
         }
     }
@@ -79,6 +131,27 @@
             }
         }
     }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 0;
+            padding-top: 30px;
+            gap: 30px;
+        }
+    }
+    .skills {
+        padding-top: 50px;
+        &__items {
+            grid-template: minmax(250px,auto)/repeat(2,265px);
+        }
+        &__ratings {
+            grid-template: minmax(70px,auto) / repeat(2,235px);
+            column-gap: 50px;
+            &-line {
+                width: 235px;
+            }
+    }
+    }
 }
 
 @media (max-width: 576px) {
@@ -116,6 +189,29 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        .title__section-subtitle {
+            font-size: 24px;
+        }
+        &__wrapper {
+            grid-template-columns: 260px;
+        }
+    }
+    .skills {
+        .title__section-subtitle {
+            font-size: 24px;
+            line-height: 45px;
+        }
+        &__items {
+            grid-template-columns: 290px;
+        }
+        &__ratings {
+            grid-template-columns: 290px;
+            &-line {
+                width: 290px;
+            }
         }
     }
 }
